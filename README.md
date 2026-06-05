@@ -60,4 +60,7 @@ Mike Hartington (Apache-2.0). See `NOTICE`.
 
 ## License
 
-Apache-2.0 — see `LICENSE`.
+MIT — see `LICENSE`.
+
+The bundled highlight engine `autoload/oceanic_next.vim` is from OceanicNext and
+remains under Apache-2.0 — see `LICENSE-OceanicNext` and `NOTICE`.

@@ -15,4 +15,5 @@ Modifications by avral (OceanicNeutral):
     (fork of the bundled "hybrid" airline theme).
 
 The file autoload/oceanic_next.vim is the unmodified highlight engine from
-OceanicNext, redistributed under the Apache License, Version 2.0.
+OceanicNext, redistributed under the Apache License, Version 2.0
+(see LICENSE-OceanicNext). All other files are licensed under MIT (see LICENSE).
