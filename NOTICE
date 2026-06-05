@@ -1,0 +1,18 @@
+OceanicNeutral
+Copyright 2026 avral
+
+This product is a derivative of OceanicNext.
+  OceanicNext — Copyright Mike Hartington
+  https://github.com/mhartington/oceanic-next
+  Licensed under the Apache License, Version 2.0.
+
+Modifications by avral (OceanicNeutral):
+  - colors/OceanicNeutral.vim: base01/base02/base03 changed from blue-grey to
+    neutral grey; blue changed #6699cc -> #5f87d7. Plugin integrations added
+    (Pmenu, CocFloating, NERDTreeCWD, VertSplit/WinSeparator, ALE/Signify signs,
+    indent-blankline, treesitter @-groups, transparency).
+  - autoload/airline/themes/oceanic_neutral.vim: companion airline theme
+    (fork of the bundled "hybrid" airline theme).
+
+The file autoload/oceanic_next.vim is the unmodified highlight engine from
+OceanicNext, redistributed under the Apache License, Version 2.0.
