@@ -76,6 +76,9 @@ hi SpellBad cterm=NONE      gui=bold      ctermfg=203 guifg=#ec5f67 guibg=NONE c
 hi Pmenu    cterm=NONE gui=NONE ctermfg=145 ctermbg=237 guifg=#a7adba guibg=#3a3a3a
 hi PmenuSel cterm=NONE gui=NONE ctermfg=237 ctermbg=145 guifg=#3a3a3a guibg=#a7adba
 
+" Плавающие окна (документация автокомплита, всплывашка диагностики): фон как у меню.
+hi NormalFloat cterm=NONE gui=NONE ctermfg=145 ctermbg=237 guifg=#a7adba guibg=#3a3a3a
+
 " coc: меню автокомплита (CocPumMenu->CocFloating) иначе падает в почти-чёрный NormalFloat.
 hi CocFloating cterm=NONE gui=NONE ctermfg=145 ctermbg=237 guifg=#a7adba guibg=#3a3a3a
 
@@ -103,6 +106,19 @@ hi ALEHintSign    guifg=#808080 guibg=NONE ctermfg=Grey   ctermbg=NONE
 hi SignifySignAdd    guibg=NONE ctermbg=NONE
 hi SignifySignChange guibg=NONE ctermbg=NONE
 hi SignifySignDelete guibg=NONE ctermbg=NONE
+
+" Gitsigns (git-гаттер) — только цветной символ, фон прозрачный.
+hi GitSignsAdd          guifg=#99c794 guibg=NONE ctermfg=114 ctermbg=NONE
+hi GitSignsChange       guifg=#5f87d7 guibg=NONE ctermfg=68  ctermbg=NONE
+hi GitSignsDelete       guifg=#ec5f67 guibg=NONE ctermfg=203 ctermbg=NONE
+hi GitSignsChangedelete guifg=#c594c5 guibg=NONE ctermfg=176 ctermbg=NONE
+hi GitSignsTopdelete    guifg=#ec5f67 guibg=NONE ctermfg=203 ctermbg=NONE
+" Число счётчика (show_count) — берёт цвет из этих групп.
+hi! link GitSignsAddNr          GitSignsAdd
+hi! link GitSignsChangeNr       GitSignsChange
+hi! link GitSignsDeleteNr       GitSignsDelete
+hi! link GitSignsChangedeleteNr GitSignsChangedelete
+hi! link GitSignsTopdeleteNr    GitSignsTopdelete
 
 " Treesitter @-группы (TODO/FIXME/типы). ПРИМ: подсветка treesitter сейчас выключена
 " (highlight=false в init) — пока инертны, сработают если включишь ts-highlight.
